@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_Cart"
+        android:icon="@mipmap/ic_shopping_cart_white_24dp"
+        android:title="Keranjang"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_Mobil"
+        android:icon="@mipmap/ic_drive_eta_white_24dp"
+        android:title="Mobil Ku"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_Notif"
+        android:icon="@mipmap/ic_notifications_none_white_24dp"
+        android:title="Orderan"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_Status"
+        android:icon="@mipmap/ic_timelapse_white_24dp"
+        android:title="Orderan"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_edit"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="Ubah profil"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_logout"
+        android:icon="@mipmap/ic_directions_run_black_24dp"
+        android:title="Log Out"
+        app:showAsAction="ifRoom"/>
+</menu>

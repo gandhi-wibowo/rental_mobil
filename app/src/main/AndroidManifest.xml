@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gandhi.rental">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Daftar" />
+        <activity
+            android:name=".TambahMobilActivity"
+            android:label="Tambah Data Mobil"
+            android:parentActivityName=".MobilkuActivity" />
+        <activity
+            android:name=".DetailkuActivity"
+            android:label="Ubah Data Mobil"
+            android:parentActivityName=".MobilkuActivity" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="Detail Mobil"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MobilkuActivity"
+            android:label="Mobil ku"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Rental"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Testimoni"
+            android:label="Testimoni"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Rental"
+            android:label="Rental"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Order"
+            android:label="Orderan"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.example.gandhi.rental_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailOrder"
+            android:label="Detail Orderan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailRental"
+            android:label="Detail Rental"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".User"
+            android:label="Ubah Profil"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LupaActivity"
+            android:label="Lupa Password"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".PasswordBaru"
+            android:label="Password Baru" />
+
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Status"
+            android:label="Status"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>
